@@ -17,7 +17,7 @@ android {
     compileSdkVersion(28)
     defaultConfig {
         applicationId = "com.example.mymessage"
-        minSdkVersion(15)
+        minSdkVersion(16)
         targetSdkVersion(28)
         versionCode = 1
         versionName = "1.0"
@@ -58,4 +58,11 @@ dependencies {
     //Navigation
     implementation("android.arch.navigation:navigation-fragment:1.0.0")
     implementation("android.arch.navigation:navigation-ui:1.0.0")
+
+    //Firebase
+    implementation("com.google.firebase:firebase-core:17.0.1")
+}
+
+apply {
+    plugin("com.google.gms.google-services")
 }
