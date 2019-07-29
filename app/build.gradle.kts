@@ -13,6 +13,10 @@ androidExtensions {
     })
 }
 
+apply {
+    plugin("io.fabric")
+}
+
 android {
     compileSdkVersion(28)
     defaultConfig {
@@ -61,6 +65,9 @@ dependencies {
 
     //Firebase
     implementation("com.google.firebase:firebase-core:17.0.1")
+
+    //Firebase crashlytic
+    implementation("com.crashlytics.sdk.android:crashlytics:2.10.1")
 }
 
 apply {
